@@ -5,6 +5,11 @@
 
 ---
 
+## 📥 Download Latest Release
+[**🚀 Download DevSuite Pro v1.2.3 for Windows**](https://github.com/arsalbytes/devsuite-pro-releases/releases/download/v.1.2.3/DevSuit.Pro.exe)
+
+---
+
 ## 🔥 Why DevSuite Pro? (The "Must-Have" List)
 
 ### 🛠️ 1. The XAMPP "Crash-Fixer"
