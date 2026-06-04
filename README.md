@@ -6,7 +6,7 @@
 ---
 
 ## 📥 Download Latest Release
-[![Download DevSuite Pro](https://img.shields.io/badge/Download-DevSuite%20Pro%20v1.2.4-0a84ff?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/arsalbytes/devsuite-pro-releases/releases/download/v.1.2.4/DevSuit.Pro.exe)
+[![Download DevSuite Pro](https://img.shields.io/badge/Download-DevSuite%20Pro%20v.1.2.5-0a84ff?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/arsalbytes/devsuite-pro-releases/releases/download/v.1.2.5/DevSuit.Pro.exe)
 
 ---
 
