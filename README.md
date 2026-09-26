@@ -56,11 +56,12 @@ Built for Windows 10 & 11, DevSuite Pro features:
 ## ⌨️ System Requirements
 - OS: Windows 10/11
 - XAMPP (Any version installed on any drive)
+- DevSuite Pro only manages and automates local development workflows
 
 ---
 
 ## 📜 License
-This project is provided as **Freeware** by **Arsal Bytes**. It is free for both personal and commercial use, but it is not open-source. For detailed terms, see the [LICENSE](LICENSE) file.
+This project is provided as **Freeware** by **Arsal Bytes**. It is free for both personal and commercial use, but it is not open-source. For detailed terms, see the [LICENSE](LICENSE) file. DevSuite Pro is an independent third-party application and is not affiliated with, endorsed by, or sponsored by Apache Friends or XAMPP. XAMPP must be installed separately.
 
 ---
 
