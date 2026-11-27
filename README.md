@@ -4,7 +4,7 @@
 
 ### The Ultimate Next-Generation Local Development Environment & Database Studio for Windows
 
-**DevSuite Pro** is a modern, high-performance, and fully portable all-in-one local development suite engineered specifically for **Windows 10 & 11 (64-bit)**. It delivers a native desktop experience with 13+ integrated services, sub-100ms multi-version switching, a multi-engine database client, sandboxed local email testing, automatic local wildcard DNS, self-healing port conflict resolution, and background auto-updating.
+**DevSuite Pro** is a modern, high-performance, and fully portable all-in-one local development suite engineered specifically for **Windows 10 & 11 (64-bit)**. It delivers a native desktop experience with 13+ integrated services, sub-100ms multi-version switching, a multi-engine database client, sandboxed local email testing, automatic local wildcard DNS, self-healing port conflict resolution, multi-monitor workspace orchestration (**DevSpaces**), local Android emulator management, and background auto-updating.
 
 [![Platform](https://img.shields.io/badge/Platform-Windows%2010%20%7C%2011%20(x64)-0a84ff?style=for-the-badge&logo=windows&logoColor=white)](#system-requirements)
 [![Release](https://img.shields.io/badge/Download-Windows%20Installer%20(.exe)-0078D4?style=for-the-badge&logo=windows11&logoColor=white)](https://github.com/arsalbytes/devsuite-pro-releases/releases/latest)
@@ -12,7 +12,7 @@
 [![Auto--Update](https://img.shields.io/badge/Auto--Update-Silent%20Atomic%20Swapping-success?style=for-the-badge)](#14-silent-background-auto-updater)
 [![License](https://img.shields.io/badge/License-Freeware-orange?style=for-the-badge)](#license)
 
-[Download .exe](#-download--installation) • [Key Features](#-complete-features-guide) • [Services & Matrix](#-integrated-stack--service-matrix) • [Database Studio](#6-native-multi-engine-database-explorer) • [Quick Connect (.env)](#-framework-quick-connect-examples) • [Documentation Guides](#-comprehensive-documentation--guides)
+[Download .exe](#-download--installation) • [Key Features](#-complete-features-guide) • [Services & Matrix](#-integrated-stack--service-matrix) • [Database Studio](#6-native-multi-engine-database-explorer) • [DevSpaces](#17--devspaces--multi-monitor-workspace-launcher) • [Android Emulators](#18--local-android-emulator-manager-avd-studio) • [Quick Connect (.env)](#-framework-quick-connect-examples) • [Documentation Guides](#-comprehensive-documentation--guides)
 
 </div>
 
@@ -213,6 +213,24 @@ A complete, high-performance database management studio built directly into the 
 - **Arsal Bytes Cloud Sync**: Link your account to backup and restore project lists, custom groups, and developer notes across multiple machines.
 - **Local JSON Export / Import**: Easily export your entire configuration to a `settings.json` file.
 
+### 17. 🖥️ DevSpaces — Multi-Monitor Workspace Launcher
+Orchestrate your entire multi-screen coding setup and restore complex window layouts with a single click:
+- **Multi-Monitor Display Discovery**: Automatically detects all connected physical and virtual monitors with real-time screen indexes, pixel resolutions, and Primary display identification.
+- **1-Click Window Snapshotting**: Capture currently open desktop windows (IDEs, browsers, terminals, design tools, and File Explorer folders) along with their exact screen assignment, window state (`Maximized`, `Minimized`, or `Normal`), and custom pixel bounds.
+- **Custom Apps, Folders & URLs**: Manually add applications with custom CLI launch arguments, directory paths, or web URLs, and optionally configure specific items to **Run as Administrator**.
+- **Smart Window Repositioning**: Enable **Move Existing Windows** to snap already-open applications back into their saved monitor positions without spawning duplicate instances.
+- **Smart Disconnected-Monitor Fallback**: Automatically snaps windows assigned to an unplugged external display back onto your Primary screen so windows never open off-screen.
+- **Desktop Shortcut Integration**: Generate standalone Windows Desktop shortcuts (`.lnk`) that launch any saved DevSpace directly via `--launch-workspace=<id>`.
+
+### 18. 📱 Local Android Emulator Manager (AVD Studio)
+Download, create, customize, launch, and monitor Android Virtual Devices (AVDs) natively inside DevSuite Pro — **with zero Android Studio installation required**:
+- **Zero-Android-Studio 1-Click SDK & OS Image Installer**: No need to install the multi-gigabyte Android Studio IDE. Download Google's official standalone Android Emulator, Platform-Tools (`adb`), and Android OS system images (**Android 11–16**, with **Google Play Store** or **Google APIs**) directly inside DevSuite Pro, backed by real-time **WHPX / Hypervisor** readiness verification.
+- **Non-Blocking Background Downloads & Windows Notifications**: OS image downloads, archive verification, and extraction run directly inside an inline progress card in the Emulators grid so you can keep working anywhere in the app, triggering a native Windows notification upon completion or error.
+- **Automatic Android SDK & AVD Detection**: Auto-discovers `ANDROID_HOME`, `ANDROID_SDK_ROOT`, `%LOCALAPPDATA%\Android\Sdk`, `emulator.exe`, `adb.exe`, and `~/.android/avd` profiles, with support for setting any custom SDK directory.
+- **1-Click Virtual Device Creator**: Spin up new AVDs from built-in device presets (**Google Pixel 9 / 8 / 7**, **Medium Phone**, **Google Pixel Fold**, **Pixel Tablet 11"**, **7" WSVGA Tablet**) paired with any installed or newly downloaded Android OS system image.
+- **Live Lifecycle Controls**: Monitor real-time device status (`Running`, `Booting`, `Paused`, `Stopped`), ADB serial port (`emulator-5554`), and Google Play Store availability, with 1-click **Start**, **Stop**, **Cold Boot** (discard snapshot), **Pause**, and **Resume**.
+- **Hardware Profile Editor & Maintenance**: Customize RAM (`1.5 GB`–`8 GB+`), CPU cores (`1`–`8`), storage (`6 GB`–`64 GB`), and VM heap size (`128 MB`–`1024 MB`), wipe user data (factory reset), open the AVD folder, stream live logs in **Terminal**, or cleanly delete AVDs.
+
 ---
 
 ## 📂 Portable Directory Architecture
@@ -253,7 +271,7 @@ E:\DevSuite\  (or C:\DevSuite\)
 ```
 
 ### User Configuration Directory (`%APPDATA%\DevSuitePro`)
-- `%APPDATA%\DevSuitePro\settings.json`: Configuration settings, projects list, notes, and cloud sync status.
+- `%APPDATA%\DevSuitePro\settings.json`: Configuration settings, projects list, saved DevSpaces workspaces, notes, and cloud sync status.
 - `%APPDATA%\DevSuitePro\cron\`: Cron job configurations and stdout/stderr execution log files.
 - `%APPDATA%\DevSuitePro\logs\`: Main application and service operational logs.
 - `%APPDATA%\DevSuitePro\pids\`: Process tracking records for graceful shutdown management.
@@ -391,6 +409,24 @@ DevSuite Pro uses native FastCGI / CGI action handlers in Apache. Each project w
 <summary><b>How do updates work? Will my projects or databases be overwritten?</b></summary>
 <br>
 Never. DevSuite Pro separates the executable binary from your project and database directories. The silent updater only replaces the application executable (`.exe`). Your databases in `data/`, project files in `projects/`, and settings in `%APPDATA%` remain completely untouched.
+</details>
+
+<details>
+<summary><b>What happens in DevSpaces if I unplug my secondary monitor?</b></summary>
+<br>
+DevSpaces includes automatic Smart Fallback. If a saved workspace assigns apps to a secondary display that is currently disconnected, DevSuite Pro automatically repositions those windows onto your Primary monitor so nothing gets lost off-screen.
+</details>
+
+<details>
+<summary><b>Can I create and run Android Emulators without installing Android Studio?</b></summary>
+<br>
+Yes! Click <b>SDK &amp; Images</b> (or <b>1-Click Setup Emulator</b>) on the Emulators page. DevSuite Pro downloads Google's official standalone Android Emulator, Platform-Tools (<code>adb</code>), and your chosen Android OS system image (Android 11–16) in the background and automatically provisions a ready-to-launch Virtual Device.
+</details>
+
+<details>
+<summary><b>My Android Emulators are not showing up. Where does DevSuite Pro look for the SDK?</b></summary>
+<br>
+DevSuite Pro checks `ANDROID_HOME`, `ANDROID_SDK_ROOT`, and the standard Windows path `%LOCALAPPDATA%\Android\Sdk` automatically. If your SDK is stored elsewhere (for example on `D:\`), click <b>SDK Path</b> on the Emulators page to point DevSuite Pro to your custom Android SDK folder.
 </details>
 
 ---
