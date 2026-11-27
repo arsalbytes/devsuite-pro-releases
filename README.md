@@ -7,12 +7,12 @@
 **DevSuite Pro** is a modern, high-performance, and fully portable all-in-one local development suite engineered specifically for **Windows 10 & 11 (64-bit)**. It delivers a native desktop experience with 13+ integrated services, sub-100ms multi-version switching, a multi-engine database client, sandboxed local email testing, automatic local wildcard DNS, self-healing port conflict resolution, multi-monitor workspace orchestration (**DevSpaces**), local Android emulator management, and background auto-updating.
 
 [![Platform](https://img.shields.io/badge/Platform-Windows%2010%20%7C%2011%20(x64)-0a84ff?style=for-the-badge&logo=windows&logoColor=white)](#system-requirements)
-[![Release](https://img.shields.io/badge/Download-Windows%20Installer%20(.exe)-0078D4?style=for-the-badge&logo=windows11&logoColor=white)](https://github.com/arsalbytes/devsuite-pro-releases/releases/latest)
+[![Release](https://img.shields.io/badge/Download-Windows%20Installer-0078D4?style=for-the-badge&logo=windows11&logoColor=white)](https://github.com/arsalbytes/devsuite-pro-releases/releases/latest)
 [![Architecture](https://img.shields.io/badge/Architecture-Zero--Copy%20NTFS%20Junctions-blueviolet?style=for-the-badge)](#1-sub-100ms-multi-version-runtime-management)
 [![Auto--Update](https://img.shields.io/badge/Auto--Update-Silent%20Atomic%20Swapping-success?style=for-the-badge)](#14-silent-background-auto-updater)
 [![License](https://img.shields.io/badge/License-Freeware-orange?style=for-the-badge)](#license)
 
-[Download .exe](#-download--installation) • [Key Features](#-complete-features-guide) • [Services & Matrix](#-integrated-stack--service-matrix) • [Database Studio](#6-native-multi-engine-database-explorer) • [DevSpaces](#17--devspaces--multi-monitor-workspace-launcher) • [Android Emulators](#18--local-android-emulator-manager-avd-studio) • [Quick Connect (.env)](#-framework-quick-connect-examples) • [Documentation Guides](#-comprehensive-documentation--guides)
+[Download Installer](#-download--installation) • [Key Features](#-complete-features-guide) • [Services & Matrix](#-integrated-stack--service-matrix) • [Database Studio](#6-native-multi-engine-database-explorer) • [DevSpaces](#17--devspaces--multi-monitor-workspace-launcher) • [Android Emulators](#18--local-android-emulator-manager-avd-studio) • [Quick Connect (.env)](#-framework-quick-connect-examples) • [Documentation Guides](#-comprehensive-documentation--guides)
 
 </div>
 
@@ -35,9 +35,9 @@ Traditional local web development on Windows has forced developers to compromise
 DevSuite Pro is distributed as a pre-compiled, optimized Windows 64-bit executable. No compilation, compiler setup, or source-code builds are needed.
 
 ### 1. Download Options
-Head to the [Official GitHub Releases](https://github.com/arsalbytes/devsuite-pro-releases/releases/latest) and download:
-- **`DevSuite-Pro-Setup.exe`** — The standard Windows installer (registers shortcuts and installs cleanly).
-- **`DevSuite-Pro-Portable.zip`** — The portable edition (extract anywhere and run immediately).
+Head to the [Official GitHub Releases](https://github.com/arsalbytes/devsuite-pro-releases/releases/latest) page and download:
+- **[`DevSuite-Pro-Setup-v2.0.0.zip`](https://github.com/arsalbytes/devsuite-pro-releases/releases/download/v.2.0.0/DevSuite-Pro-Setup-v2.0.0.zip)** — **Full Bundled Windows Installer (Recommended for New Installs)**: Extract the `.zip` archive and run `DevSuite Pro-amd64-installer.exe` to install DevSuite Pro along with the bundled local stack (`Apache`, `PHP`, `MariaDB`, `MySQL`, `Node.js`, `Python`, `Redis`, `Composer`, shortcuts & VC++ runtime).
+- **`DevSuite Pro.exe`** (from the [Latest Release Assets](https://github.com/arsalbytes/devsuite-pro-releases/releases/latest)) — **Standalone App Binary**: Portable executable used by the built-in silent updater or existing stack setups.
 
 ### 2. First Launch & Setup
 1. Launch **DevSuite Pro**.
