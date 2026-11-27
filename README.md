@@ -20,7 +20,7 @@
 
 ## 💡 What is DevSuite Pro?
 
-Traditional local web development on Windows has forced developers to compromise: either wrestle with heavy virtual container systems (Docker Desktop consuming 4GB+ RAM at idle, slow file I/O, complex WSL2 setups) or rely on outdated legacy stacks (XAMPP, Laragon, WAMP) that lack modern services, break during port conflicts, and require manual configuration edits.
+Traditional local web development on Windows has forced developers to compromise: either wrestle with heavy virtual container systems (Docker Desktop consuming 4GB+ RAM at idle, slow file I/O, complex WSL2 setups) or rely on fragmented legacy local stacks that lack modern services, break during port conflicts, and require manual configuration edits.
 
 **DevSuite Pro provides a unified, zero-compromise solution:**
 - **Native Windows Speed**: Runs directly on bare-metal Win32 APIs with **0% idle CPU usage** and minimal memory footprint.
